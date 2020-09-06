@@ -22,3 +22,9 @@ Runtime verification
    Verifies whether each container is running as per static verification
    
    Detects mismatch between code's port-configuration and docker's port-configuration
+   
+Refer services.txt for information
+static:
+   ./runParser.sh
+runtime:
+   ./runParser.sh 1
