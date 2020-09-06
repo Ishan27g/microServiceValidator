@@ -1,4 +1,3 @@
 build:
-	go build -o bin/test test.go
-run:
-	go run test.go
+	go build -o bin/parser parser.go validator.go validateCount.go validateImage.go validateNginx.go validateCompose.go
+
