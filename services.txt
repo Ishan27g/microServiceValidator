@@ -1,10 +1,5 @@
 #instances(only some services are scalable)|container-name|path to docker compose|Path to Dockerfile|path-to-nginx-conf
-1|nginx_api|../API-container/API-container-nginx/Dockerfile|../API-container/docker-compose.yaml
-1|register_api|../API-container/register/Dockerfile|../API-container/docker-compose.yaml
-1|post_api|../API-container/write/Dockerfile|../API-container/docker-compose.yaml
-3|sync_api|../API-container/sync/Dockerfile|../API-container/docker-compose.yaml|../API-container/API-container-nginx/nginx-proxy.conf
-1|nginx_service|../Service-Container/nginx_service/Dockerfile|../Service-Container/docker-compose.yaml
-1|register_service|../Service-Container/register_service/Dockerfile|../Service-Container/docker-compose.yaml
-1|write_service|../Service-Container/write_service/Dockerfile|../Service-Container/docker-compose.yaml
-3|sync_service|../Service-Container/sync_service/Dockerfile|../Service-Container/docker-compose.yaml|../Service-Container/nginx_service/nginx-proxy.conf
-3|auth_service|../Service-Container/auth_service/Dockerfile|../Service-Container/docker-compose.yaml|../Service-Container/nginx_service/nginx-proxy.conf
+1|nginx|../container/container-nginx/Dockerfile|../container/docker-compose.yaml
+1|api1|../api-container/1/Dockerfile|../api-container/docker-compose.yaml
+3|service1|../Service/1/Dockerfile|../Service/docker-compose.yaml|../container/container-nginx/nginx-proxy.conf
+3|service2|../Service/2/Dockerfile|../Service/docker-compose.yaml|../container/container-nginx/nginx-proxy.conf
