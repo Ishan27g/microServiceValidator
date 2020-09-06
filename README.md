@@ -1,30 +1,23 @@
-# configurationValidator
+# microService configuration validator
+Verify docker micro-service's status
 
+Verify configuration between docker docker-Compose and nginx 
+   
+Easy debugging
 
-# Golang utility 
-   Verify docker micro-service's status
+# Static verification 
    
-   Verify configuration between docker docker-Compose and nginx 
-   
-   Easy debugging
+	Checks for docker-dockerCompose-nginx configuration mismatch
 
-Static verification 
-  -
-   check for docker-dockerCompose-nginx configuration mismatch
+# Runtime verification    
    
-   Parses services.txt to look for Dockerfile, docker-compose and nginx.conf path
+	Detects mismatch between code's port-configuration and docker's port-configuration
    
-   Verifies container details for each entry of service.txt
+# Refer services.txt for information
 
-Runtime verification 
-   -
-   
-   Verifies whether each container is running as per static verification
-   
-   Detects mismatch between code's port-configuration and docker's port-configuration
-   
-Refer services.txt for information
 static:
-   ./runParser.sh
+   
+	./runParser.sh
 runtime:
-   ./runParser.sh 1
+   
+	./runParser.sh 1
